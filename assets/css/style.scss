@@ -1,0 +1,43 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem 1.1rem;
+  background: #fafafa;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-media {
+  margin-top: 1rem;
+  min-height: 140px;
+  border: 2px dashed #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+}
+
+.media-placeholder {
+  margin: 0;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
