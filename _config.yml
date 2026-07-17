@@ -6,3 +6,4 @@ plugins:
 show_downloads: false
 baseurl: /portfolio
 url: https://TaleenJ.github.io
+permalink: pretty

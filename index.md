@@ -26,7 +26,7 @@ I'm bilingual (English and Spanish). I swam competitively for four years in high
 
 <div class="project-grid">
 
-<a class="project-card" href="{{ '/projects/titan-trails/' | relative_url }}">
+<a class="project-card" href="{{ site.baseurl }}/projects/titan-trails/">
   <h3>Titan Trails</h3>
   <p>Indoor live-location routing across all four floors of CSUF’s Engineering Building — Wi‑Fi RSSI fingerprinting, ML position prediction, and shortest-path routing on floor-plan graphs.</p>
   <p><strong>Role:</strong> Team lead · Spring 2026</p>
@@ -34,7 +34,7 @@ I'm bilingual (English and Spanish). I swam competitively for four years in high
   <p class="project-cta">View project →</p>
 </a>
 
-<a class="project-card" href="{{ '/projects/bitcoin-transaction-analysis/' | relative_url }}">
+<a class="project-card" href="{{ site.baseurl }}/projects/bitcoin-transaction-analysis/">
   <h3>Bitcoin Transaction Analysis</h3>
   <p>Group project with Travis Counihan and David Nguyen — end-to-end ML pipeline on 1M+ Bitcoin transactions to detect ransomware-related activity, comparing Random Forest, SVM, KNN, and clustering.</p>
   <p><strong>Stack:</strong> Python · pandas · scikit-learn</p>

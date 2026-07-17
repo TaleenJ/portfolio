@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Bitcoin Transaction Analysis
+permalink: /projects/bitcoin-transaction-analysis/
 ---
 
-<p class="back-link"><a href="{{ '/#projects' | relative_url }}">← Back to projects</a></p>
+<p class="back-link"><a href="{{ site.baseurl }}/#projects">← Back to projects</a></p>
 
 # Bitcoin Transaction Analysis
 

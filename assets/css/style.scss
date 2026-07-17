@@ -3,9 +3,9 @@
 
 @import "{{ site.theme }}";
 
-/* Solid blue page chrome, white content surface */
+/* Solid navy page chrome (Modernist-style), white content surface */
 body {
-  background: #0F76EB;
+  background: #1e3a5f;
   font-size: 15px;
   line-height: 1.55;
   color: #000;
@@ -65,12 +65,12 @@ header.site-header p {
   letter-spacing: 0.02em;
   color: #fff;
   text-decoration: none;
-  background: #0F76EB;
+  background: #1e3a5f;
   border-radius: 4px;
 }
 
 .site-nav a:hover {
-  background: #0c5fc0;
+  background: #152b47;
   color: #fff;
   text-decoration: none;
 }
@@ -91,7 +91,7 @@ section strong {
 }
 
 section a {
-  color: #0a5bb8;
+  color: #1e3a5f;
 }
 
 section h1 {
@@ -130,7 +130,7 @@ section h3 {
 }
 
 a.project-card:hover {
-  border-color: #0F76EB;
+  border-color: #1e3a5f;
   text-decoration: none;
   color: #000;
 }
@@ -148,7 +148,7 @@ a.project-card:hover {
   margin-bottom: 0;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #0a5bb8;
+  color: #1e3a5f;
 }
 
 .project-media,
@@ -208,7 +208,7 @@ a.project-card:hover {
 }
 
 .back-link a {
-  color: #0a5bb8;
+  color: #1e3a5f;
   font-weight: 600;
   text-decoration: none;
 }
@@ -230,7 +230,7 @@ a.project-card:hover {
 }
 
 .projects-more a {
-  color: #0a5bb8;
+  color: #1e3a5f;
   font-weight: 600;
 }
 

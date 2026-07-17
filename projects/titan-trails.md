@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Titan Trails
+permalink: /projects/titan-trails/
 ---
 
-<p class="back-link"><a href="{{ '/#projects' | relative_url }}">← Back to projects</a></p>
+<p class="back-link"><a href="{{ site.baseurl }}/#projects">← Back to projects</a></p>
 
 # Titan Trails
 
