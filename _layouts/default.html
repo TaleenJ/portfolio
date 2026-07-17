@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% seo %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="site-header without-description">
+        <a class="site-brand" href="{{ '/' | relative_url }}#home">{{ site.title | default: "Richard Perez" }}</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="{{ '/' | relative_url }}#home">Home</a>
+          <a href="{{ '/' | relative_url }}#projects">Projects</a>
+          <a href="{{ '/' | relative_url }}#about">About</a>
+          <a href="{{ '/' | relative_url }}#contact">Contact</a>
+        </nav>
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script>fixScale(document);</script>
+  </body>
+</html>

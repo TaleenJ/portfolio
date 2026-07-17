@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Richard Perez
+# Richard Perez {#home}
 Computer Science student · Fullerton, CA
 
 Building with data, ML, and full-stack apps — focused on clear analysis and real outcomes.
@@ -11,7 +11,7 @@ Building with data, ML, and full-stack apps — focused on clear analysis and re
 
 ---
 
-## About
+## About {#about}
 
 I'm a Computer Science student at CSU Fullerton pursuing a B.S. (May 2026) and an M.S. (May 2028). I work with Python, pandas, NumPy, scikit-learn, and MySQL, and I like turning messy datasets into reproducible pipelines and useful insights.
 
@@ -29,34 +29,25 @@ Outside of class, I teach swimming — tracking progress, communicating clearly,
 
 ---
 
-## Projects
+## Projects {#projects}
 
 <div class="project-grid">
+
+<div class="project-card">
+  <h3>Titan Trails</h3>
+  <p>Indoor live-location routing app. Modeled building floor layouts as graphs and computed shortest paths with Dijkstra’s algorithm; estimated position from RSSI with a KNN model; built a pipeline to align floor-plan coordinates with real layouts and a UI to visualize routes.</p>
+  <p><strong>Role:</strong> Team lead · Spring 2026</p>
+  <p><strong>Stack:</strong> Graphs · Dijkstra · KNN · RSSI · data pipelines</p>
+  <div class="project-media">
+    <!-- Add video or clip here later -->
+    <p class="media-placeholder">Video / demo clip coming soon</p>
+  </div>
+</div>
 
 <div class="project-card">
   <h3>Bitcoin Transaction Analysis</h3>
   <p>Team project analyzing 1M+ Bitcoin transactions. Led preprocessing, feature engineering, and model evaluation across Random Forest, SVM, KNN, and clustering with a reproducible pandas + scikit-learn pipeline.</p>
   <p><strong>Stack:</strong> Python, pandas, scikit-learn</p>
-  <div class="project-media">
-    <!-- Add video or clip here later -->
-    <p class="media-placeholder">Video / demo clip coming soon</p>
-  </div>
-</div>
-
-<div class="project-card">
-  <h3>SQL Analytics & Schema Design</h3>
-  <p>Designed a normalized relational schema and wrote 20+ analytical SQL queries using multi-table joins, aggregations, and indexing to surface global trend patterns.</p>
-  <p><strong>Stack:</strong> MySQL, SQL</p>
-  <div class="project-media">
-    <!-- Add video or clip here later -->
-    <p class="media-placeholder">Video / demo clip coming soon</p>
-  </div>
-</div>
-
-<div class="project-card">
-  <h3>Movie Recommendation App</h3>
-  <p>Full-stack recommendation prototype processing 100,000+ rows, with structured data workflows across the stack and a deployed working demo.</p>
-  <p><strong>Stack:</strong> Full-stack · structured data workflows</p>
   <div class="project-media">
     <!-- Add video or clip here later -->
     <p class="media-placeholder">Video / demo clip coming soon</p>
@@ -84,7 +75,7 @@ Relevant coursework: Data Science & Big Data · Machine Learning · Statistics �
 
 ---
 
-## Contact
+## Contact {#contact}
 
 Want to collaborate or chat about data / ML / CS work?
 

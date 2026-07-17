@@ -3,41 +3,157 @@
 
 @import "{{ site.theme }}";
 
+/* Navy / blue page chrome, white content surface (Modernist scale) */
+body {
+  background: #1e3a5f;
+  background: linear-gradient(#2a4a73, #1a3354);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.wrapper {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+
+header.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-radius: 8px 8px 0 0;
+  background: #ffffff;
+  background: linear-gradient(#ffffff, #f3f8fc);
+  padding: 14px 20px;
+  border-bottom: 1px solid #b7c9dc;
+  position: relative;
+}
+
+header.site-header h1,
+header.site-header p {
+  display: none;
+}
+
+.site-brand {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0b3d6e;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+}
+
+.site-brand:hover {
+  color: #062a4d;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-decoration: none;
+  background: #2f6fad;
+  background: linear-gradient(#4a8fd4, #2a6499);
+  border-radius: 4px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
+  box-shadow: inset rgba(255, 255, 255, 0.35) 0 1px 0;
+}
+
+.site-nav a:hover {
+  background: linear-gradient(#5a9de0, #3474ad);
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  font-size: 13px;
+}
+
+section h1 {
+  font-size: 1.75rem;
+  margin-top: 0.4rem;
+}
+
+section h2 {
+  font-size: 1.25rem;
+}
+
+section h3 {
+  font-size: 1.05rem;
+}
+
+.hero p,
+.hero {
+  color: inherit;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin: 1.5rem 0 2rem;
+  gap: 1.25rem;
+  margin: 1.25rem 0 1.75rem;
 }
 
 .project-card {
-  border: 1px solid #ddd;
-  padding: 1rem 1.1rem;
-  background: #fafafa;
+  border: 1px solid #c5d4e4;
+  padding: 0.9rem 1rem;
+  background: #f7fafc;
 }
 
 .project-card h3 {
   margin-top: 0;
+  color: #0b3d6e;
 }
 
 .project-media {
-  margin-top: 1rem;
-  min-height: 140px;
-  border: 2px dashed #bbb;
+  margin-top: 0.85rem;
+  min-height: 120px;
+  border: 2px dashed #9eb4cb;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f3f3f3;
+  background: #eef3f8;
 }
 
 .media-placeholder {
   margin: 0;
-  color: #777;
-  font-size: 0.95rem;
+  color: #5a6f86;
+  font-size: 0.9rem;
+}
+
+footer {
+  font-size: 12px;
 }
 
 @media (max-width: 700px) {
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  header.site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .site-nav a {
+    flex: 1;
+    text-align: center;
   }
 }
