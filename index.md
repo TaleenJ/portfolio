@@ -2,59 +2,56 @@
 layout: default
 ---
 
-# Richard Perez {#home}
-Computer Science student · Fullerton, CA
+<div id="home"></div>
 
-Building with data, ML, and full-stack apps — focused on clear analysis and real outcomes.
+<p class="intro-role">B.S. Computer Science · Pursuing an M.S. at CSULB · Fullerton, CA</p>
 
-[Email](mailto:rixhperez@gmail.com) · [LinkedIn](https://linkedin.com/in/RichardPerez) · [GitHub](https://github.com/RichardPerez)
+Detail-oriented and passionate about the full data processing cycle — from messy inputs to clean pipelines and clear results. I'm looking forward to graduate study at Long Beach and building toward a career in data science, with interests in machine learning, edge AI, and real-world applications.
+
+[Email](mailto:richardperez1307@gmail.com) · [LinkedIn](https://www.linkedin.com/in/richard-perez-b3205435b/) · [GitHub](https://github.com/TaleenJ)
 
 ---
 
 ## About {#about}
 
-I'm a Computer Science student at CSU Fullerton pursuing a B.S. (May 2026) and an M.S. (May 2028). I work with Python, pandas, NumPy, scikit-learn, and MySQL, and I like turning messy datasets into reproducible pipelines and useful insights.
+I knew I wanted to pursue computer science in sixth grade. I learned to code with Scratch and built a four-player soccer game kids could play on a tablet — and I fell in love with programming.
 
-Outside of class, I teach swimming — tracking progress, communicating clearly, and adapting instruction to each person. That same mindset shows up in how I approach data and product work.
+I earned my B.S. in Computer Science from CSU Fullerton (May 2026) and I'm pursuing an M.S. in Computer Science at California State University, Long Beach. I'm drawn to data work end-to-end: collecting and cleaning, building pipelines, evaluating models, and turning findings into something someone can actually use.
 
----
-
-## Skills
-
-**Languages & tools:** Python · SQL (MySQL) · Excel  
-
-**Data & ML:** pandas · NumPy · scikit-learn · Random Forest · SVM · KNN · clustering  
-
-**Build:** data pipelines · relational schemas · full-stack prototypes  
+I'm bilingual (English and Spanish). I swam competitively for four years in high school, and I still love the water — swimming is detail-oriented in the best way. Tiny adjustments in timing, form, and focus are what make you faster, and those same habits show up in how I approach data and code. Outside of class I teach swimming, and I'm interested in data science clubs and hackathons as ways to build with other people and learn faster.
 
 ---
 
-## Projects {#projects}
+## Favorite Projects {#projects}
 
 <div class="project-grid">
 
-<div class="project-card">
+<a class="project-card" href="{{ '/projects/titan-trails/' | relative_url }}">
   <h3>Titan Trails</h3>
-  <p>Indoor live-location routing app. Modeled building floor layouts as graphs and computed shortest paths with Dijkstra’s algorithm; estimated position from RSSI with a KNN model; built a pipeline to align floor-plan coordinates with real layouts and a UI to visualize routes.</p>
+  <p>Indoor live-location routing for CSUF’s Engineering Building — Wi‑Fi RSSI fingerprinting, ML position prediction, and shortest-path routing on floor-plan graphs.</p>
   <p><strong>Role:</strong> Team lead · Spring 2026</p>
-  <p><strong>Stack:</strong> Graphs · Dijkstra · KNN · RSSI · data pipelines</p>
-  <div class="project-media">
-    <!-- Add video or clip here later -->
-    <p class="media-placeholder">Video / demo clip coming soon</p>
-  </div>
-</div>
+  <p><strong>Stack:</strong> React Native · FastAPI · KNN / Random Forest · Dijkstra · Firebase</p>
+  <p class="project-cta">View project →</p>
+</a>
 
-<div class="project-card">
+<a class="project-card" href="{{ '/projects/bitcoin-transaction-analysis/' | relative_url }}">
   <h3>Bitcoin Transaction Analysis</h3>
-  <p>Team project analyzing 1M+ Bitcoin transactions. Led preprocessing, feature engineering, and model evaluation across Random Forest, SVM, KNN, and clustering with a reproducible pandas + scikit-learn pipeline.</p>
-  <p><strong>Stack:</strong> Python, pandas, scikit-learn</p>
-  <div class="project-media">
-    <!-- Add video or clip here later -->
-    <p class="media-placeholder">Video / demo clip coming soon</p>
-  </div>
-</div>
+  <p>End-to-end ML pipeline on 1M+ Bitcoin transactions to detect ransomware-related activity, comparing Random Forest, SVM, KNN, and clustering.</p>
+  <p><strong>Stack:</strong> Python · pandas · scikit-learn</p>
+  <p class="project-cta">View project →</p>
+</a>
 
 </div>
+
+<p class="projects-more">More on my <a href="https://github.com/TaleenJ">GitHub</a>.</p>
+
+---
+
+## Coursework
+
+**California State University, Fullerton**
+
+Algorithms · Data Structures · Databases · Advanced Databases · Introduction to Big Data · Computational Bioinformatics · Machine Learning · Data Science & Big Data
 
 ---
 
@@ -68,10 +65,10 @@ Teach water safety skills, track individual progress, and communicate with paren
 ## Education
 
 **California State University, Fullerton**  
-B.S. Computer Science — expected May 2026  
-M.S. Computer Science — expected May 2028  
+B.S. Computer Science — May 2026
 
-Relevant coursework: Data Science & Big Data · Machine Learning · Statistics · Database Applications
+**California State University, Long Beach**  
+M.S. Computer Science — expected 2028
 
 ---
 
@@ -79,6 +76,6 @@ Relevant coursework: Data Science & Big Data · Machine Learning · Statistics �
 
 Want to collaborate or chat about data / ML / CS work?
 
-- **Email:** [rixhperez@gmail.com](mailto:rixhperez@gmail.com)
-- **LinkedIn:** [linkedin.com/in/RichardPerez](https://linkedin.com/in/RichardPerez)
-- **GitHub:** [github.com/RichardPerez](https://github.com/RichardPerez)
+- **Email:** [richardperez1307@gmail.com](mailto:richardperez1307@gmail.com)
+- **LinkedIn:** [linkedin.com/in/richard-perez-b3205435b](https://www.linkedin.com/in/richard-perez-b3205435b/)
+- **GitHub:** [github.com/TaleenJ](https://github.com/TaleenJ)

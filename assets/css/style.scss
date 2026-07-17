@@ -7,8 +7,8 @@
 body {
   background: #1e3a5f;
   background: linear-gradient(#2a4a73, #1a3354);
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .wrapper {
@@ -24,9 +24,11 @@ header.site-header {
   border-radius: 8px 8px 0 0;
   background: #ffffff;
   background: linear-gradient(#ffffff, #f3f8fc);
-  padding: 14px 20px;
+  padding: 20px 24px;
   border-bottom: 1px solid #b7c9dc;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header.site-header h1,
@@ -35,7 +37,7 @@ header.site-header p {
 }
 
 .site-brand {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
   color: #0b3d6e;
@@ -59,8 +61,8 @@ header.site-header p {
 
 .site-nav a {
   display: inline-block;
-  padding: 0.4rem 0.75rem;
-  font-size: 12px;
+  padding: 0.55rem 0.9rem;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: #fff;
@@ -79,25 +81,41 @@ header.site-header p {
 }
 
 section {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 section h1 {
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   margin-top: 0.4rem;
 }
 
 section h2 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 
 section h3 {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
 
 .hero p,
 .hero {
   color: inherit;
+}
+
+.intro {
+  margin-top: 0.25rem;
+}
+
+.intro > p:first-child {
+  margin-top: 0;
+  font-size: 1.05rem;
+  color: #3d5470;
+}
+
+.intro-role {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 1.05rem;
+  color: #3d5470;
 }
 
 .project-grid {
@@ -108,9 +126,21 @@ section h3 {
 }
 
 .project-card {
+  display: block;
   border: 1px solid #c5d4e4;
   padding: 0.9rem 1rem;
   background: #f7fafc;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+a.project-card:hover {
+  border-color: #2f6fad;
+  box-shadow: 0 4px 14px rgba(30, 58, 95, 0.12);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-card h3 {
@@ -118,7 +148,15 @@ section h3 {
   color: #0b3d6e;
 }
 
-.project-media {
+.project-cta {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2f6fad;
+}
+
+.project-media,
+.media-placeholder {
   margin-top: 0.85rem;
   min-height: 120px;
   border: 2px dashed #9eb4cb;
@@ -126,20 +164,63 @@ section h3 {
   align-items: center;
   justify-content: center;
   background: #eef3f8;
-}
-
-.media-placeholder {
-  margin: 0;
   color: #5a6f86;
   font-size: 0.9rem;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.image-grid .media-placeholder {
+  margin-top: 0;
+  min-height: 140px;
+}
+
+.back-link {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.back-link a {
+  color: #2f6fad;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+.project-meta {
+  margin-top: -0.35rem;
+  color: #5a6f86;
+  font-size: 0.95rem;
+}
+
+.projects-more {
+  margin: -0.5rem 0 1.5rem;
+  font-size: 14px;
+  color: #5a6f86;
+}
+
+.projects-more a {
+  color: #0b3d6e;
+  font-weight: 600;
 }
 
 footer {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 @media (max-width: 700px) {
-  .project-grid {
+  .project-grid,
+  .image-grid {
     grid-template-columns: 1fr;
   }
 
