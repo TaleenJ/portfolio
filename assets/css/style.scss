@@ -3,16 +3,16 @@
 
 @import "{{ site.theme }}";
 
-/* Navy / blue page chrome, white content surface (Modernist scale) */
+/* Solid blue page chrome, white content surface */
 body {
-  background: #1e3a5f;
-  background: linear-gradient(#2a4a73, #1a3354);
+  background: #0F76EB;
   font-size: 15px;
   line-height: 1.55;
+  color: #000;
 }
 
 .wrapper {
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 12px 40px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 header.site-header {
@@ -23,9 +23,8 @@ header.site-header {
   flex-wrap: wrap;
   border-radius: 8px 8px 0 0;
   background: #ffffff;
-  background: linear-gradient(#ffffff, #f3f8fc);
   padding: 20px 24px;
-  border-bottom: 1px solid #b7c9dc;
+  border-bottom: 1px solid #d0d7de;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -40,13 +39,12 @@ header.site-header p {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
-  color: #0b3d6e;
+  color: #000;
   text-decoration: none;
-  text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
 }
 
 .site-brand:hover {
-  color: #062a4d;
+  color: #000;
   text-decoration: none;
 }
 
@@ -67,21 +65,33 @@ header.site-header p {
   letter-spacing: 0.02em;
   color: #fff;
   text-decoration: none;
-  background: #2f6fad;
-  background: linear-gradient(#4a8fd4, #2a6499);
+  background: #0F76EB;
   border-radius: 4px;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
-  box-shadow: inset rgba(255, 255, 255, 0.35) 0 1px 0;
 }
 
 .site-nav a:hover {
-  background: linear-gradient(#5a9de0, #3474ad);
+  background: #0c5fc0;
   color: #fff;
   text-decoration: none;
 }
 
 section {
   font-size: 15px;
+  color: #000;
+  background: #ffffff;
+}
+
+section h1,
+section h2,
+section h3,
+section p,
+section li,
+section strong {
+  color: #000;
+}
+
+section a {
+  color: #0a5bb8;
 }
 
 section h1 {
@@ -97,25 +107,10 @@ section h3 {
   font-size: 1.15rem;
 }
 
-.hero p,
-.hero {
-  color: inherit;
-}
-
-.intro {
-  margin-top: 0.25rem;
-}
-
-.intro > p:first-child {
-  margin-top: 0;
-  font-size: 1.05rem;
-  color: #3d5470;
-}
-
 .intro-role {
   margin: 0.35rem 0 0.75rem;
   font-size: 1.05rem;
-  color: #3d5470;
+  color: #000;
 }
 
 .project-grid {
@@ -127,32 +122,33 @@ section h3 {
 
 .project-card {
   display: block;
-  border: 1px solid #c5d4e4;
+  border: 1px solid #c5d0dc;
   padding: 0.9rem 1rem;
-  background: #f7fafc;
-  color: inherit;
+  background: #ffffff;
+  color: #000;
   text-decoration: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 a.project-card:hover {
-  border-color: #2f6fad;
-  box-shadow: 0 4px 14px rgba(30, 58, 95, 0.12);
-  transform: translateY(-2px);
+  border-color: #0F76EB;
   text-decoration: none;
-  color: inherit;
+  color: #000;
 }
 
 .project-card h3 {
   margin-top: 0;
-  color: #0b3d6e;
+  color: #000;
+}
+
+.project-card p {
+  color: #000;
 }
 
 .project-cta {
   margin-bottom: 0;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #2f6fad;
+  color: #0a5bb8;
 }
 
 .project-media,
@@ -163,8 +159,8 @@ a.project-card:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eef3f8;
-  color: #5a6f86;
+  background: #f4f6f8;
+  color: #222;
   font-size: 0.9rem;
   text-align: center;
   padding: 0.75rem;
@@ -182,13 +178,37 @@ a.project-card:hover {
   min-height: 140px;
 }
 
+.project-figure {
+  margin: 1.25rem 0 1.75rem;
+  padding: 0;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border: 1px solid #c5d0dc;
+  background: #fff;
+}
+
+.project-figure-wide img {
+  max-width: 100%;
+}
+
+.project-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  color: #000;
+}
+
 .back-link {
   margin: 0 0 0.75rem;
   font-size: 0.95rem;
 }
 
 .back-link a {
-  color: #2f6fad;
+  color: #0a5bb8;
   font-weight: 600;
   text-decoration: none;
 }
@@ -199,23 +219,25 @@ a.project-card:hover {
 
 .project-meta {
   margin-top: -0.35rem;
-  color: #5a6f86;
+  color: #111;
   font-size: 0.95rem;
 }
 
 .projects-more {
   margin: -0.5rem 0 1.5rem;
   font-size: 14px;
-  color: #5a6f86;
+  color: #000;
 }
 
 .projects-more a {
-  color: #0b3d6e;
+  color: #0a5bb8;
   font-weight: 600;
 }
 
 footer {
   font-size: 13px;
+  color: #000;
+  background: #ffffff;
 }
 
 @media (max-width: 700px) {
